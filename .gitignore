@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+results/
+data/fold_specific_coarse/
+checkpoints/
+*.log
+*.pt
+*.pth
+*.rar

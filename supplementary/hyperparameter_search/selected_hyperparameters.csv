@@ -1,0 +1,2 @@
+strategy,selected_trial,F,H,D,C,K,mean_validation_aupr,population_std_validation_aupr,selection_metric
+Strategy-P,trial_8,24,24,48,1,100,0.698003,0.027178,highest_mean_five_fold_validation_AUPR
