@@ -13,5 +13,3 @@ This supplementary result summarizes the sensitivity of CoFi to the temperature 
 | 2.0 | 0.965 ± 0.007 | 0.968 ± 0.007 |
 
 Performance is stable across moderate temperature values and reaches its highest AUC and AUPR at τ = 1.0. Accordingly, τ = 1.0 is used as the default setting in the reported CoFi experiments.
-
-Only the aggregate results reported in the response are provided here. Fold-level outputs and full training logs are not included.

@@ -95,5 +95,3 @@ CoFi/
 - `supplementary/hyperparameter_search/`: the ten evaluated hyperparameter combinations and validation summaries.
 - `supplementary/temperature_sensitivity/`: temperature-sensitivity results reported in the response.
 - `supplementary/pathway_interpretability/`: aggregate pathway-interpretability results reported in the manuscript and response.
-
-The repository does not include epoch-level hyperparameter-search logs, per-prediction pathway CSV files, intermediate experiment outputs, or full training logs.

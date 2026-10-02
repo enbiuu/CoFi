@@ -28,5 +28,3 @@ For the three-replicate random controls, the evaluable and matched DTI counts ar
 Among CoFi's top-1,000 predictions, 982 were evaluable and 833 achieved Match@3. Among the top-2,000 predictions, 1,935 were evaluable and 1,688 achieved Match@3. CoFi therefore obtained substantially higher pathway-annotation consistency than the corresponding degree-matched random controls.
 
 This analysis measures consistency and biological plausibility relative to existing knowledge bases. It does not establish a causal mechanism, and unmatched predictions may still represent novel biological hypotheses because KEGG and Reactome annotations are incomplete.
-
-Only the aggregate statistics and metric definitions reported in the manuscript and response are provided here. Per-prediction pathway alignments, random-draw pair sets, and detailed CSV outputs are not included.

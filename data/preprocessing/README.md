@@ -65,25 +65,3 @@ python data/preprocessing/fine_view/convert_adjlists_to_json.py
 ## Coarse-grained view
 
 The main experiment commands automatically generate one set of five coarse-view matrices for each cross-validation fold. Before constructing a fold's matrices, all DTI edges are removed from the heterogeneous graph and only that fold's training-positive DTI edges are added back. Validation- and test-positive DTI edges are therefore excluded.
-
-For every retained meta-path, the matrix entries contain meta-path instance counts. Forward and reverse counts are accumulated for directed cross-type paths, followed by the symmetric normalization
-
-```text
-D^(-1/2) A D^(-1/2).
-```
-
-The matrices are cached under:
-
-```text
-data/fold_specific_coarse/seed_<seed>/fold_<fold>/
-```
-
-The cache includes a hash of the training-positive split and is regenerated automatically if the split changes. The model averages the three drug-side matrices and the two protein-side matrices at load time. No PathSim filtering or top-k pruning is applied.
-
-The standalone command below generates matrices from the complete graph and is retained as a preprocessing utility; it is not used by the main cross-validation experiments:
-
-```bash
-python data/preprocessing/coarse_view/generate_metapath_adjacencies.py
-```
-
-Run `generate_graph.py` before either view-specific preprocessing command.
